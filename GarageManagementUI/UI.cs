@@ -9,7 +9,7 @@ namespace GarageManagementUI
      public class UI
      {
           private const string c_refuel = "Refeul";
-          private const string c_recharge = "Recharge";
+          private const string c_recharge = "Recharge"; 
           private readonly Garage m_garage = new Garage();
 
           public void Run()
