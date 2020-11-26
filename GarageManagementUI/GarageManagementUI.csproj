@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1584D3C-24A4-47CD-B387-61E3C6222697}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>GarageManagementSystem</RootNamespace>
-    <AssemblyName>GarageManagementSystem</AssemblyName>
+    <ProjectGuid>{C4FF144B-81B5-4ED6-98A2-D74B271D407A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GarageManagementUI</RootNamespace>
+    <AssemblyName>GarageManagementUI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,9 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,21 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="Electricity.cs" />
-    <Compile Include="Energy.cs" />
-    <Compile Include="Fuel.cs" />
-    <Compile Include="Garage.cs" />
-    <Compile Include="MotorCycle.cs" />
-    <Compile Include="OwnerInfo.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Truck.cs" />
-    <Compile Include="Validation.cs" />
-    <Compile Include="ValueOutOfRangeException.cs" />
-    <Compile Include="Vehicle.cs" />
-    <Compile Include="VehicleDetails.cs" />
-    <Compile Include="VehicleMaker.cs" />
-    <Compile Include="Wheel.cs" />
+    <Compile Include="UI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GarageManagementSystem\GarageManagementSystem.csproj">
+      <Project>{e1584d3c-24a4-47cd-b387-61e3c6222697}</Project>
+      <Name>GarageManagementSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
